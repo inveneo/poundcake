@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    # RewriteEngine on
+    # RewriteRule    ^$ app/webroot/    [L]
+    # RewriteRule    (.*) app/webroot/$1 [L]
+    
+    # allow /awstats -- i.e. don't let CakePHP try to process that URL
+    RewriteEngine on
+    RewriteCond %{REQUEST_URI} !^/awstats/
+    RewriteRule ^$ app/webroot/ [L]
+    RewriteCond %{REQUEST_URI} !^/awstats/
+    RewriteRule ^(.*)$ app/webroot/$1 [L]
+
+</IfModule>

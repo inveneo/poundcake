@@ -1,0 +1,1161 @@
+<html>
+<head>
+<title>Docs For Class ExcelWriterXML_Sheet</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">ExcelWriterXML</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_ExcelWriterXML.html" class="menu">class tree: ExcelWriterXML</a> ]
+		  [ <a href="../elementindex_ExcelWriterXML.html" class="menu">index: ExcelWriterXML</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_ExcelWriterXML.html">ExcelWriterXML</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../ExcelWriterXML/_ExcelWriterXML.php.html">		ExcelWriterXML.php
+		</a><br>
+			<a href="../ExcelWriterXML/_ExcelWriterXML_Sheet.php.html">		ExcelWriterXML_Sheet.php
+		</a><br>
+			<a href="../ExcelWriterXML/_ExcelWriterXML_Style.php.html">		ExcelWriterXML_Style.php
+		</a><br>
+	  </div><br />
+	subpackage <b>examples</b><br>  <div class="package">
+			<a href="../ExcelWriterXML/examples/_example.php.html">		example.php
+		</a><br>
+			<a href="../ExcelWriterXML/examples/_example2.php.html">		example2.php
+		</a><br>
+			<a href="../ExcelWriterXML/examples/_example3_db.php.html">		example3_db.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../ExcelWriterXML/ExcelWriterXML.html">ExcelWriterXML</a><br />
+	    		<a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html">ExcelWriterXML_Sheet</a><br />
+	    		<a href="../ExcelWriterXML/ExcelWriterXML_Style.html">ExcelWriterXML_Style</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: ExcelWriterXML_Sheet</h1>
+Source Location: /ExcelWriterXML_Sheet.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Class for generating sheets within the Excel document</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Robert F Greer</li>
+                                                                                                                                                                                          </ul>
+
+
+
+
+        
+                                                                                                                        
+<h4>Version:</h4>
+<ul>
+  <li>1.0</li>
+</ul>
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#var$formatErrors">$formatErrors</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodExcelWriterXML_Sheet">ExcelWriterXML_Sheet</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodaddComment">addComment</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodaddError">addError</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodaddURL">addURL</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodcellHeight">cellHeight</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodcellMerge">cellMerge</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodcellWidth">cellWidth</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodcolumnWidth">columnWidth</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodconvertMysqlDate">convertMysqlDate</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodconvertMysqlDatetime">convertMysqlDatetime</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodconvertMysqlTime">convertMysqlTime</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methoddisplayRightToLeft">displayRightToLeft</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodgetErrors">getErrors</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodgetID">getID</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodgetSheetXML">getSheetXML</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodmysqlQueryToTable">mysqlQueryToTable</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodrowHeight">rowHeight</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodwriteDateTime">writeDateTime</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodwriteFormula">writeFormula</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodwriteNumber">writeNumber</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodwriteString">writeString</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a42">42</a>]<br />
+Class for generating sheets within the Excel document<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Robert F Greer</td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://msdn.microsoft.com/en-us/library/aa140066(office.10).aspx">http://msdn.microsoft.com/en-us/library/aa140066(office.10).aspx</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontStrikethrough">ExcelWriterXML_Style::fontStrikethrough()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontUnderline">ExcelWriterXML_Style::fontUnderline()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontShadow">ExcelWriterXML_Style::fontShadow()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontOutline">ExcelWriterXML_Style::fontOutline()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodgetErrors">ExcelWriterXML_Style::getErrors()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontName">ExcelWriterXML_Style::fontName()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodgetStyleXML">ExcelWriterXML_Style::getStyleXML()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodnumberFormatDatetime">ExcelWriterXML_Style::numberFormatDatetime()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodnumberFormatTime">ExcelWriterXML_Style::numberFormatTime()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodnumberFormatDate">ExcelWriterXML_Style::numberFormatDate()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodnumberFormat">ExcelWriterXML_Style::numberFormat()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontItalic">ExcelWriterXML_Style::fontItalic()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodname">ExcelWriterXML_Style::name()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodgetID">ExcelWriterXML_Style::getID()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontColor">ExcelWriterXML_Style::fontColor()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodalignVertical">ExcelWriterXML_Style::alignVertical()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodalignVerticaltext">ExcelWriterXML_Style::alignVerticaltext()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodalignShrinktofit">ExcelWriterXML_Style::alignShrinktofit()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodalignRotate">ExcelWriterXML_Style::alignRotate()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodalignHorizontal">ExcelWriterXML_Style::alignHorizontal()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodalignWraptext">ExcelWriterXML_Style::alignWraptext()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodbgColor">ExcelWriterXML_Style::bgColor()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodcheckColor">ExcelWriterXML_Style::checkColor()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontBold">ExcelWriterXML_Style::fontBold()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodborder">ExcelWriterXML_Style::border()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodbgPatternColor">ExcelWriterXML_Style::bgPatternColor()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodbgPattern">ExcelWriterXML_Style::bgPattern()</a></td>
+  </tr>
+  <tr>
+    <td><b>uses:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Style.html#methodfontFamily">ExcelWriterXML_Style::fontFamily()</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$formatErrors"></a>
+	<p></p>
+	<h4>$formatErrors = <span class="value">array()</span></h4>
+	<p>[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a51">51</a>]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="methodExcelWriterXML_Sheet"></a>
+	<h3>constructor ExcelWriterXML_Sheet <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a64">64</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>ExcelWriterXML_Sheet ExcelWriterXML_Sheet(
+string
+$id)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor for a new Sheet<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>The name of the sheet to be referenced within the  spreadsheet</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddComment"></a>
+	<h3>method addComment <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a421">421</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addComment(
+integer
+$row, integer
+$col, string
+$comment, [string
+$author = 'SYSTEM'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds a comment to a cell<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td>Row, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$col</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$comment</b>&nbsp;&nbsp;</td>
+        <td>The comment to be displayed on the cell</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$author</b>&nbsp;&nbsp;</td>
+        <td>The comment will show a bold header displaying the  author</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddError"></a>
+	<h3>method addError <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a82">82</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addError(
+
+$function, string
+$message)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds a format error.  When the document is generated if there are any  errors they will be listed on a seperate sheet.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$message</b>&nbsp;&nbsp;</td>
+        <td>Details of the error</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$function</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddURL"></a>
+	<h3>method addURL <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a384">384</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addURL(
+integer
+$row, integer
+$col, string
+$URL)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Makes the target cell a link to a URL<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td>Row, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$col</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$URL</b>&nbsp;&nbsp;</td>
+        <td>The URL that the link should point to</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcellHeight"></a>
+	<h3>method cellHeight <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a366">366</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void cellHeight(
+
+$row, 
+$col, [
+$height = 12.5])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Alias for function rowHeight()<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$col</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$height</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcellMerge"></a>
+	<h3>method cellMerge <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a396">396</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void cellMerge(
+integer
+$row, integer
+$col, [integer
+$width = 0], [integer
+$height = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Merges 2 or more cells.<br /><br /><p>The function acts like a bounding box, with the row and column defining  the upper left corner, and the width and height extending the box.  If width or height are zero (or ommitted) then the function does nothing.</p><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td>Row, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$col</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>Number of cells to the right to merge with</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$height</b>&nbsp;&nbsp;</td>
+        <td>Number of cells down to merge with</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcellWidth"></a>
+	<h3>method cellWidth <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a352">352</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void cellWidth(
+
+$row, 
+$col, [
+$width = 48])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Alias for function columnWidth()<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$col</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcolumnWidth"></a>
+	<h3>method columnWidth <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a361">361</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void columnWidth(
+integer
+$col, [mixed
+$width = 48])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the width of a cell.<br /><br /><p>Sets  the width of the column that the cell resides in.  Cell width of zero effectively hides the column</p><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$col</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>Width of the cell/column, default is 48</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodconvertMysqlDate"></a>
+	<h3>method convertMysqlDate <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a126">126</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string convertMysqlDate(
+string
+$datetime)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Converts a MySQL type date field to a value that can be used within Excel  If the passed value is not valid then the passed string is sent back.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Value in the Excel format &quot;yyyy-mm-ddT00:00:00.000&quot;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$datetime</b>&nbsp;&nbsp;</td>
+        <td>Value must in in the format &quot;yyyy-mm-dd hh:ii:ss&quot;  or &quot;yyyy-mm-dd&quot;</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodconvertMysqlDatetime"></a>
+	<h3>method convertMysqlDatetime <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a106">106</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string convertMysqlDatetime(
+string
+$datetime)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Converts a MySQL type datetime field to a value that can be used within  Excel.<br /><br /><p>If the passed value is not valid then the passed string is sent back.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Value in the Excel format &quot;yyyy-mm-ddThh:ii:ss.000&quot;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$datetime</b>&nbsp;&nbsp;</td>
+        <td>Value must in in the format &quot;yyyy-mm-dd hh:ii:ss&quot;</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodconvertMysqlTime"></a>
+	<h3>method convertMysqlTime <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a151">151</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string convertMysqlTime(
+string
+$datetime)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Converts a MySQL type time field to a value that can be used within Excel  If the passed value is not valid then the passed string is sent back.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Value in the Excel format &quot;1899-12-31Thh:ii:ss.000&quot;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$datetime</b>&nbsp;&nbsp;</td>
+        <td>Value must in in the format &quot;yyyy-mm-dd hh:ii:ss&quot;  or &quot;hh:ii:ss&quot;</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddisplayRightToLeft"></a>
+	<h3>method displayRightToLeft <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a286">286</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void displayRightToLeft(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Displays the sheet in Right to Left format<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetErrors"></a>
+	<h3>method getErrors <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a95">95</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed getErrors(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns any errors found in the sheet<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Array of errors if they exist, otherwise false</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetID"></a>
+	<h3>method getID <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a72">72</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getID(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Function to get the named value of the Sheet<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Name of the Sheet</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetSheetXML"></a>
+	<h3>method getSheetXML <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a294">294</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getSheetXML(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Called by the ExcelWriterXML class to get the XML data for this object<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Contains only the XML data for the sheet</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodmysqlQueryToTable"></a>
+	<h3>method mysqlQueryToTable <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a436">436</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void mysqlQueryToTable(
+string
+$host, string
+$username, string
+$password, 
+$query, string
+$db, mixed
+$table)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Outputs a MYSQL table or list of tables to an Excel doc<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$host</b>&nbsp;&nbsp;</td>
+        <td>MySQL host to connect to</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$username</b>&nbsp;&nbsp;</td>
+        <td>Username to connect with</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$password</b>&nbsp;&nbsp;</td>
+        <td>Password to connect with</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$db</b>&nbsp;&nbsp;</td>
+        <td>Database to use</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$table</b>&nbsp;&nbsp;</td>
+        <td>If string, out specific table.  If array, each table will have it's own sheet</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrowHeight"></a>
+	<h3>method rowHeight <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a376">376</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void rowHeight(
+integer
+$row, [mixed
+$height = 12.5], integer
+$col)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the height of a cell.<br /><br /><p>Sets  the height of the column that the cell resides in.  Cell height of zero effectively hides the row</p><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td>Row, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$col</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$height</b>&nbsp;&nbsp;</td>
+        <td>Height of the cell/column, default is 12.5</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodwriteDateTime"></a>
+	<h3>method writeDateTime <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a244">244</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void writeDateTime(
+integer
+$row, integer
+$column, string
+$data, [mixed
+$style = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Writes a Date/Time to a cell.<br /><br /><p>If data is not valid the function will write the passed value as a  string.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>writeData()</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td>Row, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$column</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>Date or Time data to be written to a cell.  This must  be in the format &quot;yyyy-mm-ddThh:ii:ss.000&quot; for Excel to recognize it.</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>Named style, or style reference to be applied to the  cell</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodwriteFormula"></a>
+	<h3>method writeFormula <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a187">187</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void writeFormula(
+string
+$dataType, integer
+$row, integer
+$column, string
+$data, [mixed
+$style = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Writes a formula to a cell<br /><br /><p>From MS  Specifies the formula stored in this cell. All formulas are persisted in  R1C1 notation because they are significantly easier to parse and generate  than A1-style formulas. The formula is calculated upon reload unless  calculation is set to manual. Recalculation of the formula overrides the  value in this cell's Value attribute.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html#methodwriteFormula">ExcelWriterXML_Sheet::writeFormula()</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$dataType</b>&nbsp;&nbsp;</td>
+        <td>Type of data that the formula should generate,  &quot;String&quot; &quot;Number&quot; &quot;DateTime&quot;</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td>Row, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$column</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>Formula data to be written to a cell</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>Named style, or style reference to be applied to the  cell</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodwriteNumber"></a>
+	<h3>method writeNumber <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a222">222</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void writeNumber(
+integer
+$row, integer
+$column, mixed
+$data, [mixed
+$style = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Writes a number to a cell.<br /><br /><p>If the data is not numeric then the function will write the data as a  string.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>writeData()</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td>Row, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$column</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>Number data to be written to a cell</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>Named style, or style reference to be applied to the  cell</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodwriteString"></a>
+	<h3>method writeString <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML_Sheet.php.html#a207">207</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void writeString(
+integer
+$row, integer
+$column, string
+$data, [mixed
+$style = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Writes a string to a cell<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>writeData()</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td>Row, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$column</b>&nbsp;&nbsp;</td>
+        <td>Column, based upon a &quot;1&quot; based array</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>String data to be written to a cell</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$style</b>&nbsp;&nbsp;</td>
+        <td>Named style, or style reference to be applied to the  cell</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Wed, 16 Feb 2011 20:04:36 -0600 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

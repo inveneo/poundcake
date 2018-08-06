@@ -1,0 +1,152 @@
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
+.navbar .brand {
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+.navbar .brand:hover {
+  color: ;
+}
+.navbar .nav > li > a {
+  padding: 11px 10px 8px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+.navbar .navbar-text {
+  padding: 11px 10px 8px;
+  line-height: inherit;
+}
+.navbar .navbar-search .search-query,
+.navbar .navbar-search .search-query:hover {
+  margin-bottom: 0;
+  line-height: normal;
+  color: ;
+}
+.navbar .navbar-search .search-query:focus,
+.navbar .navbar-search .search-query.focused,
+.navbar .navbar-search .search-query:hover:focus,
+.navbar .navbar-search .search-query:hover.focused {
+  color: ;
+}
+.navbar-inverse .brand {
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+}
+.navbar-inverse .brand:hover {
+  color: ;
+}
+.navbar-inverse .nav > li > a {
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+}
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown:hover > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown.open:hover > .dropdown-toggle .caret {
+  border-top-color: ;
+}
+.navbar-inverse .navbar-search .search-query,
+.navbar-inverse .navbar-search .search-query:hover {
+  color: ;
+}
+@media (max-width: ) {
+  .navbar .nav-collapse .nav li > a:hover {
+    background-color: ;
+    color: ;
+    text-shadow: none;
+  }
+  .navbar .nav-collapse .navbar-search {
+    border-top: none;
+    border-bottom: none;
+  }
+  .navbar-inverse .nav-collapse .nav li > a {
+    color: ;
+  }
+  .navbar-inverse .nav-collapse .nav li > a:hover {
+    background-color:  !important;
+  }
+  .navbar-inverse .nav-collapse .nav-header {
+    color: ;
+  }
+}
+div.subnav .nav > li > a {
+  color: ;
+}
+div.subnav .nav > li > a:hover {
+  border-left-color: ;
+  color: ;
+}
+div.subnav .nav > li.active > a {
+  color: ;
+}
+div.subnav .nav > li.active > a:hover {
+  color: ;
+}
+div.subnav .nav > li.dropdown > .dropdown-toggle {
+  background-color: transparent;
+}
+div.subnav .nav > li.dropdown.open > .dropdown-toggle {
+  border-left: 1px solid whiteSmoke;
+  border-right: 1px solid #E5E5E5;
+  color: ;
+}
+div.subnav .nav > li.dropdown.open > .dropdown-toggle:hover {
+  color: ;
+}
+div.subnav-fixed {
+  top: 1;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: rgba(0,0,0,0.05);
+}
+.nav > li.dropdown > .dropdown-toggle .caret,
+.nav > li.dropdown.active > .dropdown-toggle .caret,
+.nav > li.dropdown.open > .dropdown-toggle .caret,
+.nav > li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top: 4px solid ;
+  border-top-color: ;
+  opacity: 1;
+}
+.nav > li.dropdown > .dropdown-toggle:hover .caret,
+.nav > li.dropdown.active > .dropdown-toggle:hover .caret,
+.nav > li.dropdown.open > .dropdown-toggle:hover .caret,
+.nav > li.dropdown.open.active > .dropdown-toggle:hover .caret {
+  border-top: 4px solid ;
+  border-top-color: ;
+}
+.nav-list .divider {
+  background-color: ;
+  border-bottom-color: ;
+}
+.table tbody tr.success > td,
+.table tbody tr.error > td,
+.table tbody tr.info > td {
+  color: ;
+}
+.alert {
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+.alert h1,
+.alert h2,
+.alert h3,
+.alert h4,
+.alert h5,
+.alert h6 {
+  color: ;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+.label-important,
+.badge-important {
+  background-color: ;
+}
+.label-warning,
+.badge-warning {
+  background-color: ;
+}
+.label-success,
+.badge-success {
+  background-color: ;
+}
+.label-info,
+.badge-info {
+  background-color: ;
+}
+.hero-unit {
+  border: 1px solid rgba(0,0,0,0.1);
+}

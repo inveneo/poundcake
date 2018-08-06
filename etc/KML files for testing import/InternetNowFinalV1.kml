@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>InternetNowFinalV1.kml</name>
+	<visibility>0</visibility>
+	<open>1</open>
+	<Style id="sn_icon56">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.ca/mapfiles/kml/pal4/icon56.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<p align="left" style="white-space:nowrap;"><font size="+1"><b>$[name]</b></font></p> <p align="left">$[description]</p>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="gv_waypoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#gv_waypoint_normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#gv_waypoint_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="gv_waypoint0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#gv_waypoint_normal0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#gv_waypoint_highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_icon56">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_icon56</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_icon56</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="gv_waypoint_normal">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.ca/mapfiles/kml/pal4/icon56.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<p align="left" style="white-space:nowrap;"><font size="+1"><b>$[name]</b></font></p> <p align="left">$[description]</p>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="gv_waypoint_normal0">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.ca/mapfiles/kml/pal4/icon56.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<p align="left" style="white-space:nowrap;"><font size="+1"><b>$[name]</b></font></p> <p align="left">$[description]</p>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="waypoint_n">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="gv_waypoint_highlight0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.ca/mapfiles/kml/pal4/icon56.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<p align="left" style="white-space:nowrap;"><font size="+1"><b>$[name]</b></font></p> <p align="left">$[description]</p>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_icon56">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.ca/mapfiles/kml/pal4/icon56.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<p align="left" style="white-space:nowrap;"><font size="+1"><b>$[name]</b></font></p> <p align="left">$[description]</p>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="waypoint">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#waypoint_n</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#waypoint_h</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="waypoint_h">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="gv_waypoint_highlight">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.ca/mapfiles/kml/pal4/icon56.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<p align="left" style="white-space:nowrap;"><font size="+1"><b>$[name]</b></font></p> <p align="left">$[description]</p>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Folder>
+		<name>Final</name>
+		<visibility>0</visibility>
+		<open>1</open>
+		<Folder>
+			<name>North</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Placemark>
+				<name>Jurumini Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.897455,3.397255,702.299</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Jurumini Goal2 (alternative)</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.897838,3.397386,697.965</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Pakelle Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.855942,3.354192,768.46</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Pakelle 2 Goal (possible)</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.851888,3.357943,782.574</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Zaipi Building</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.955282,3.391830999999999,718.331</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Zaipi Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.955211,3.392072,718.297</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Zaipi 2 Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.952185,3.390802,719.229</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Anrinyapi Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.00806,3.471522,641.636</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Arinyapi Mast</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.008049,3.471039,642.905</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Moyo UTL</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#gv_waypoint0</styleUrl>
+				<Point>
+					<coordinates>31.721006,3.65428,980.473</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Umi Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#gv_waypoint0</styleUrl>
+				<Point>
+					<coordinates>31.80222,3.522665,630.422</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Metu Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#gv_waypoint0</styleUrl>
+				<Point>
+					<coordinates>31.788937,3.667739,1013.568</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Moyo Airtel</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#gv_waypoint0</styleUrl>
+				<Point>
+					<coordinates>31.727748,3.651851,994.226</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Pachara Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#gv_waypoint0</styleUrl>
+				<Point>
+					<coordinates>31.789707,3.391049000000001,795.644</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Moyo Orange / MTN</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#gv_waypoint0</styleUrl>
+				<Point>
+					<coordinates>31.724842,3.655569,984.576</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Moyo Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#gv_waypoint0</styleUrl>
+				<Point>
+					<coordinates>31.710262,3.662408000000001,965.8819999999999</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>South</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Placemark>
+				<name>Koro Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.358668,2.725163,1093.77</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Koro Building</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.358849,2.725211,1084.45</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Unyama Goal</name>
+				<visibility>0</visibility>
+				<styleUrl>#waypoint</styleUrl>
+				<Point>
+					<coordinates>32.379173,2.838135,1089.77</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Keyo Goal</name>
+				<visibility>0</visibility>
+				<styleUrl>#waypoint</styleUrl>
+				<Point>
+					<coordinates>32.186106,2.815089,1123.9</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Prarabbongo Goal</name>
+				<visibility>0</visibility>
+				<styleUrl>#waypoint</styleUrl>
+				<Point>
+					<coordinates>32.152764,2.906489,1048.2</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Lakwana Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#gv_waypoint</styleUrl>
+				<Point>
+					<coordinates>32.419452,2.632079,1097.657</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Gulu Uni Tower</name>
+				<visibility>0</visibility>
+				<styleUrl>#waypoint</styleUrl>
+				<Point>
+					<coordinates>32.316799,2.789639,1115.25</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Gulu Uni Goal</name>
+				<visibility>0</visibility>
+				<LookAt>
+					<longitude>32.31707129814277</longitude>
+					<latitude>2.788983226456911</latitude>
+					<altitude>0</altitude>
+					<heading>1.230550848201927e-05</heading>
+					<tilt>4.216437666047869</tilt>
+					<range>173.7660853591546</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#waypoint</styleUrl>
+				<Point>
+					<coordinates>32.31734409029952,2.789168500097826,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Prarabongo WT</name>
+				<visibility>0</visibility>
+				<styleUrl>#waypoint</styleUrl>
+				<Point>
+					<coordinates>32.152733,2.906478,1055.89</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Center</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>Atiak Goal</name>
+				<visibility>0</visibility>
+				<styleUrl>#waypoint</styleUrl>
+				<Point>
+					<coordinates>32.12105,3.25721,804.7399999999999</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Atiak Orange</name>
+				<visibility>0</visibility>
+				<styleUrl>#waypoint</styleUrl>
+				<Point>
+					<coordinates>32.121621,3.257689,809.79</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Palaro Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.365786,3.114113,1030.034</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Awach Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.407926,2.963196,1017.549</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Palaro Tall1</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.365878,3.114159,1027.972</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Patiko Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.323534,3.014831,1081.131</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Awach Policetower</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<description>&amp;nbsp;</description>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.408118,2.9632,1022.14</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Awach Tall 2</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>32.40774,2.963417,1022.437</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Bosco</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>Lacor Seminar Tower</name>
+				<visibility>0</visibility>
+				<Point>
+					<extrude>1</extrude>
+					<altitudeMode>absolute</altitudeMode>
+					<coordinates>32.22165,2.779164,1114.84</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

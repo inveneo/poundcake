@@ -1,0 +1,11 @@
+USESCALE none in
+//var/www/weathermap/configs
+nah, it's minor already fixed it.  Nodes are in 2 categories:  "Backbone" (for important nodes, triggers alerts) and a category telling what they are "Mikrotik" for routers.
+[11/2/12 11:18:11 AM] Andris Bjornson: in a few cases you replaced the "what they are" category with decomissioned instead of replacing the backbone category with decomissioned
+
+I turned PILAT off in weathermap.
+
+--Clark
+
+
+SELECT TRIGGER_NAME FROM information_schema.TRIGGERS;

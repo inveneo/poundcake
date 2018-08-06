@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Final OHR Sites.kml</name>
+	<Folder>
+		<name>Final OHR Sites</name>
+		<open>1</open>
+		<Placemark>
+			<name>KIS</name>
+			<Point>
+				<coordinates>34.750101,-0.109129,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>EKC</name>
+			<Point>
+				<coordinates>34.034567,-0.491273,1141.442627</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MFI</name>
+			<Point>
+				<coordinates>34.04633003228192,-0.4754000270261695,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

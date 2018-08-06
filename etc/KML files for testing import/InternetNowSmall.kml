@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>InternetNowFinalV1.kml</name>
+	<open>1</open>
+	<Style id="sn_icon56">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.ca/mapfiles/kml/pal4/icon56.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<p align="left" style="white-space:nowrap;"><font size="+1"><b>$[name]</b></font></p> <p align="left">$[description]</p>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_icon56">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.ca/mapfiles/kml/pal4/icon56.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<p align="left" style="white-space:nowrap;"><font size="+1"><b>$[name]</b></font></p> <p align="left">$[description]</p>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="msn_icon56">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_icon56</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_icon56</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Final</name>
+		<visibility>0</visibility>
+		<open>1</open>
+		<Folder>
+			<name>North</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Placemark>
+				<name>Jurumini Goal</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.897455,3.397255,702.299</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>Jurumini Goal2 (alternative)</name>
+				<visibility>0</visibility>
+				<Snippet maxLines="0"></Snippet>
+				<styleUrl>#msn_icon56</styleUrl>
+				<Point>
+					<coordinates>31.897838,3.397386,697.965</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

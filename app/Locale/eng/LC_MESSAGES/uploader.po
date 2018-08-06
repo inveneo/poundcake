@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CakePHP Uploader Plugin\n"
+"POT-Creation-Date: 2011-11-28 23:00-0800\n"
+"PO-Revision-Date: 2012-12-31 15:59-0800\n"
+"Last-Translator: Miles Johnson <mileswjohnson@gmail.com>\n"
+"Language-Team: Miles Johnson <mileswjohnson@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Language: en_US\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "There was an error uploading this file, please try again"
+msgstr ""
+
+msgid "An error occurred during image %s transformation"
+msgstr ""
+
+msgid "Your image width is too small; minimum width %s"
+msgstr ""
+
+msgid "Your image height is too small; minimum height %s"
+msgstr ""
+
+msgid "Your image width is too large; maximum width %s"
+msgstr ""
+
+msgid "Your image height is too large; maximum height %s"
+msgstr ""
+
+msgid "Your file size is too large; maximum size %s"
+msgstr ""
+
+msgid "Your file extension is not allowed; allowed extensions: %s"
+msgstr ""
+
+msgid "Your file type is not allowed; allowed types: %s"
+msgstr ""
+
+msgid "This file is required"
+msgstr ""
+
+msgid "Your image width is invalid; required width is %s"
+msgstr ""
+
+msgid "Your image height is invalid; required height is %s"
+msgstr ""
+
+msgid "An unknown error has occurred"
+msgstr ""
+
+msgid "File exceeds the maximum file size"
+msgstr ""
+
+msgid "File was only partially uploaded"
+msgstr ""
+
+msgid "No file was found for upload"
+msgstr ""
+
+msgid "File failed to upload"
+msgstr ""
+
+msgid "Invalid file detected for upload"
+msgstr ""

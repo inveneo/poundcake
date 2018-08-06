@@ -1,0 +1,57 @@
+Listen 9000
+
+<VirtualHost *:80>
+	ServerName towerdb.myhost.com
+	Redirect permanent / https://towerdb.myhost.com/
+</VirtualHost>
+
+<VirtualHost *:9000>
+	# this needs to be revisited, this should only be encrypting connections
+	# between this host and the load balancer, since the lb has the "real"
+	# SSL cert installed
+	SSLEngine On
+        SSLCertificateFile /path/to/certificate
+        SSLCertificateKeyFile /path/to/key
+
+	ServerName towerdb.myhost.com
+	ServerAdmin me@myhost.com
+	DocumentRoot /var/www/towerdb.myhost.com/poundcake
+	
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	
+	<Directory /var/www/towerdb.myhost.com/poundcake/>
+		Options -Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	<Location /sites/cron/*>
+		Deny from All
+                SetEnvIF X-Forwarded-For "a.b.c.d" AllowIP
+                allow from env=AllowIP
+		# allow from a.b.c.d # my office, for debugging
+		allow from 127.0.0.1 # localhost
+		allow from a.b.c.d # another server, for debugging
+	</Location>
+	
+	CustomLog /var/log/apache2/towerdb.myhost.com-access.log proxy env=forwarded
+	ErrorLog /var/log/apache2/towerdb.myhost.com-error.log
+	LogLevel warn
+
+	# awstats - see https://help.ubuntu.com/community/AWStats
+	Alias /awstatsclasses "/usr/share/awstats/lib/"
+  	Alias /awstats-icon/ "/usr/share/awstats/icon/"
+  	Alias /awstatscss "/usr/share/awstats/icon/"
+  	ScriptAlias /awstats/ /usr/lib/cgi-bin/
+  	Options ExecCGI -MultiViews +SymLinksIfOwnerMatch
+	<Location /awstats/*>
+		Deny from All
+                SetEnvIF X-Forwarded-For "a.b.c.d" AllowIP
+                allow from env=AllowIP
+                allow from a.b.c.d # my office
+	</Location>
+</VirtualHost>

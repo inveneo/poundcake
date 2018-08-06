@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>sfwifi.kml</name>
+	<Schema parent="Placemark" name="S_CityofSF2_SSS">
+		<SimpleField type="wstring" name="Name"></SimpleField>
+		<SimpleField type="wstring" name="Latitude"></SimpleField>
+		<SimpleField type="wstring" name="Longitude"></SimpleField>
+	</Schema>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin11">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl00">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>current sites</name>
+		<open>1</open>
+		<Placemark>
+			<name>WARF</name>
+			<open>1</open>
+			<LookAt>
+				<gx:TimeStamp><when>2011-12-04T05:49:16Z</when>
+</gx:TimeStamp>
+				<longitude>-122.4100379951565</longitude>
+				<latitude>37.78276099546674</latitude>
+				<altitude>0</altitude>
+				<heading>2.967457517805461e-09</heading>
+				<tilt>0</tilt>
+				<range>1000.000043134907</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin00</styleUrl>
+			<Point>
+				<coordinates>-122.4100379999233,37.78276099951862,22.50624906564336</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BruceHouse</name>
+			<styleUrl>#m_ylw-pushpin21</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>-122.2527,37.88951,328.4</coordinates>
+			</Point>
+		</Placemark>
+		<S_CityofSF2_SSS>
+			<name>Twin Peaks</name>
+			<description><![CDATA[Name = Twin Peaks<br>Latitude = 37.754486<br>Longitude = -122.446656<br>]]></description>
+			<styleUrl>#m_ylw-pushpin21</styleUrl>
+			<Point>
+				<coordinates>-122.446656,37.75448599999998,0</coordinates>
+			</Point>
+			<Name>Twin Peaks</Name>
+			<Latitude>37.754486</Latitude>
+			<Longitude>-122.446656</Longitude>
+		</S_CityofSF2_SSS>
+		<Placemark>
+			<name>203 Eddy (Alexander Hotel)</name>
+			<LookAt>
+				<longitude>-122.4114960020413</longitude>
+				<latitude>37.78436499944524</latitude>
+				<altitude>0</altitude>
+				<heading>-1.250676795173172e-09</heading>
+				<tilt>0</tilt>
+				<range>1000.000004042283</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin21</styleUrl>
+			<Point>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-122.4114960020413,37.78436499944524,44</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SanBrunoMountain</name>
+			<styleUrl>#m_ylw-pushpin21</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>absolute</altitudeMode>
+				<coordinates>-122.4013,37.67805,123.08</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>InveneoSF</name>
+			<styleUrl>#m_ylw-pushpin21</styleUrl>
+			<Point>
+				<extrude>1</extrude>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<coordinates>-122.4084,37.78171,22</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

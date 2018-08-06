@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>All Regions survey-chosen-sites-ONLY_edit.kml</name>
+	<Schema name="All Regions survey-chosen-sites-ONLY_edit" id="S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+		<SimpleField type="string" name="name"><displayName>&lt;b&gt;name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="latitude"><displayName>&lt;b&gt;latitude&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="longitude"><displayName>&lt;b&gt;longitude&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>name</b></td><td>$[All Regions survey-chosen-sites-ONLY_edit/name]</td></tr>
+  <tr><td><b>latitude</b></td><td>$[All Regions survey-chosen-sites-ONLY_edit/latitude]</td></tr>
+  <tr><td><b>longitude</b></td><td>$[All Regions survey-chosen-sites-ONLY_edit/longitude]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>name</b></td><td>$[All Regions survey-chosen-sites-ONLY_edit/name]</td></tr>
+  <tr><td><b>latitude</b></td><td>$[All Regions survey-chosen-sites-ONLY_edit/latitude]</td></tr>
+  <tr><td><b>longitude</b></td><td>$[All Regions survey-chosen-sites-ONLY_edit/longitude]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Folder id="layer 0">
+		<name>All Regions survey-chosen-sites-ONLY_edit</name>
+		<open>1</open>
+		<Placemark>
+			<name>BONEPWA+ Gh</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">BONEPWA+ Gh</SimpleData>
+					<SimpleData name="latitude">-21.699</SimpleData>
+					<SimpleData name="longitude">21.6467</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>21.64672661000001,-21.69898986999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>S.Theatre Group Gh</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">S.Theatre Group Gh</SimpleData>
+					<SimpleData name="latitude">-21.6975</SimpleData>
+					<SimpleData name="longitude">21.6474</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>21.64738274000002,-21.69748497000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>True Love Waits Gh</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">True Love Waits Gh</SimpleData>
+					<SimpleData name="latitude">-21.6973</SimpleData>
+					<SimpleData name="longitude">21.6478</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>21.64781569999999,-21.69731522,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BOCONGO-BNYC-Gh</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">BOCONGO-BNYC-Gh</SimpleData>
+					<SimpleData name="latitude">-21.6972</SimpleData>
+					<SimpleData name="longitude">21.6477</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>21.64766312,-21.69717979,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BNYC Chobe</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">BNYC Chobe</SimpleData>
+					<SimpleData name="latitude">-17.8039</SimpleData>
+					<SimpleData name="longitude">25.1486</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>25.14862250999999,-17.80386924999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BOFWA Chobe</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">BOFWA Chobe</SimpleData>
+					<SimpleData name="latitude">-17.7966</SimpleData>
+					<SimpleData name="longitude">25.1568</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>25.15679932,-17.79660605999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>CECT office reserve</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">CECT office reserve</SimpleData>
+					<SimpleData name="latitude">-18.0747</SimpleData>
+					<SimpleData name="longitude">24.5835</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>24.58349609000002,-18.07469939999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BONEPWA+ Chobe</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">BONEPWA+ Chobe</SimpleData>
+					<SimpleData name="latitude">-17.8044</SimpleData>
+					<SimpleData name="longitude">25.1476</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>25.14764213999997,-17.80437660000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BONEPWA+ Maun</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">BONEPWA+ Maun</SimpleData>
+					<SimpleData name="latitude">-19.9612</SimpleData>
+					<SimpleData name="longitude">23.4554</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>23.45544904,-19.96120996,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MCC Maun</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">MCC Maun</SimpleData>
+					<SimpleData name="latitude">-19.9741</SimpleData>
+					<SimpleData name="longitude">23.441</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>23.44100499999998,-19.97413603,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>NCONGO LISN Center Maun</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">NCONGO LISN Center Maun</SimpleData>
+					<SimpleData name="latitude">-19.9766</SimpleData>
+					<SimpleData name="longitude">23.428</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>23.42795698,-19.97663702,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Thuso Rehab Centre Maun</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">Thuso Rehab Centre Maun</SimpleData>
+					<SimpleData name="latitude">-20.0238</SimpleData>
+					<SimpleData name="longitude">23.4102</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>23.41018701000001,-20.02381196,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>W.A.R. Maun</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">W.A.R. Maun</SimpleData>
+					<SimpleData name="latitude">-19.9787</SimpleData>
+					<SimpleData name="longitude">23.423</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>23.42299699,-19.97870801999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bana Ba Metsi Ngarenge</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">Bana Ba Metsi Ngarenge</SimpleData>
+					<SimpleData name="latitude">-18.4537</SimpleData>
+					<SimpleData name="longitude">22.0759</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>22.07591802999999,-18.45371302000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GCC Gumare</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe8e8e8</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_All_Regions_survey_chosen_sites_ONLY_edit_SDD">
+					<SimpleData name="name">GCC Gumare</SimpleData>
+					<SimpleData name="latitude">-19.366</SimpleData>
+					<SimpleData name="longitude">22.1681</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>22.16807595999999,-19.36600003000002,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

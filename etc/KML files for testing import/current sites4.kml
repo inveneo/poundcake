@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>current sites2.kml</name>
+		<Placemark>
+			<name>WARF</name>
+			<Point>
+				<coordinates>-122.4100379999233,37.78276099951862,22.50624906564336</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BruceHouse</name>
+			<Point>
+				<coordinates>-122.2527,37.88951,328.4</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Twin Peaks</name>
+			<Point>
+				<coordinates>-122.446656,37.75448599999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>203 Eddy (Alexander Hotel)</name>
+			<Point>
+				<coordinates>-122.4114960020413,37.78436499944524,44</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>SanBrunoMountain</name>
+			<Point>
+				<coordinates>-122.4013,37.67805,123.08</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>InveneoSF</name>
+			<Point>
+				<coordinates>-122.4084,37.78171,22</coordinates>
+			</Point>
+		</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+		<Placemark>
+			<name>KIS</name>
+				<coordinates>34.750101,-0.109129,0</coordinates>
+		</Placemark>
+		<Placemark>
+			<name>EKC</name>
+				<coordinates>34.034567,-0.491273,1141.442627</coordinates>
+		</Placemark>
+		<Placemark>
+			<name>MFI</name>
+				<coordinates>34.04633003228192,-0.4754000270261695,0</coordinates>
+		</Placemark>
+</Document>
+</kml>

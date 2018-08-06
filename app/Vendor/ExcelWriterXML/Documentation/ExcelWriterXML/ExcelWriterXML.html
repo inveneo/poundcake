@@ -1,0 +1,813 @@
+<html>
+<head>
+<title>Docs For Class ExcelWriterXML</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">ExcelWriterXML</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_ExcelWriterXML.html" class="menu">class tree: ExcelWriterXML</a> ]
+		  [ <a href="../elementindex_ExcelWriterXML.html" class="menu">index: ExcelWriterXML</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_ExcelWriterXML.html">ExcelWriterXML</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../ExcelWriterXML/_ExcelWriterXML.php.html">		ExcelWriterXML.php
+		</a><br>
+			<a href="../ExcelWriterXML/_ExcelWriterXML_Sheet.php.html">		ExcelWriterXML_Sheet.php
+		</a><br>
+			<a href="../ExcelWriterXML/_ExcelWriterXML_Style.php.html">		ExcelWriterXML_Style.php
+		</a><br>
+	  </div><br />
+	subpackage <b>examples</b><br>  <div class="package">
+			<a href="../ExcelWriterXML/examples/_example.php.html">		example.php
+		</a><br>
+			<a href="../ExcelWriterXML/examples/_example2.php.html">		example2.php
+		</a><br>
+			<a href="../ExcelWriterXML/examples/_example3_db.php.html">		example3_db.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../ExcelWriterXML/ExcelWriterXML.html">ExcelWriterXML</a><br />
+	    		<a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html">ExcelWriterXML_Sheet</a><br />
+	    		<a href="../ExcelWriterXML/ExcelWriterXML_Style.html">ExcelWriterXML_Style</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: ExcelWriterXML</h1>
+Source Location: /ExcelWriterXML.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Class for generating the initial Excel XML document</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Robert F Greer</li>
+                  </ul>
+
+
+
+
+        
+        
+<h4>Version:</h4>
+<ul>
+  <li>1.0</li>
+</ul>
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#var$formatErrors">$formatErrors</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodExcelWriterXML">ExcelWriterXML</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodaddError">addError</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodaddSheet">addSheet</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodaddStyle">addStyle</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodcheckStyleID">checkStyleID</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methoddocAuthor">docAuthor</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methoddocCompany">docCompany</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methoddocManager">docManager</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methoddocSubject">docSubject</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methoddocTitle">docTitle</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodgetDefaultStyle">getDefaultStyle</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodmysqlTableDump">mysqlTableDump</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodoverwriteFile">overwriteFile</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodsendHeaders">sendHeaders</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodshowErrorSheet">showErrorSheet</a></li>
+    <li><a href="../ExcelWriterXML/ExcelWriterXML.html#methodwriteData">writeData</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a37">37</a>]<br />
+Class for generating the initial Excel XML document<br /><br /><p><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$xml&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><a href="../ExcelWriterXML/ExcelWriterXML.html#methodExcelWriterXML">ExcelWriterXML</a><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$format&nbsp;</span>=&nbsp;<span class="src-var">$xml</span><span class="src-sym">-&gt;</span><a href="../ExcelWriterXML/ExcelWriterXML.html#methodaddStyle">addStyle</a><span class="src-sym">(</span><span class="src-str">'StyleHeader'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$format</span><span class="src-sym">-&gt;</span><span class="src-id">fontBold</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$sheet&nbsp;</span>=&nbsp;<span class="src-var">$xml</span><span class="src-sym">-&gt;</span><a href="../ExcelWriterXML/ExcelWriterXML.html#methodaddSheet">addSheet</a><span class="src-sym">(</span><span class="src-str">'Test&nbsp;Sheet'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$sheet</span><span class="src-sym">-&gt;</span><span class="src-id">writeString&nbsp;</span><span class="src-sym">(</span><span class="src-num">1</span><span class="src-sym">,</span><span class="src-num">1</span><span class="src-sym">,</span><span class="src-str">'Header1'</span><span class="src-sym">,</span><span class="src-str">'StyleHeader'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$sheet</span><span class="src-sym">-&gt;</span><span class="src-id">writeString</span><span class="src-sym">(</span><span class="src-num">2</span><span class="src-sym">,</span><span class="src-num">1</span><span class="src-sym">,</span><span class="src-str">'My&nbsp;String'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$xml</span><span class="src-sym">-&gt;</span><a href="../ExcelWriterXML/ExcelWriterXML.html#methodsendHeaders">sendHeaders</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$xml</span><span class="src-sym">-&gt;</span><a href="../ExcelWriterXML/ExcelWriterXML.html#methodwriteData">writeData</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Robert F Greer</td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://msdn.microsoft.com/en-us/library/aa140066(office.10).aspx">http://msdn.microsoft.com/en-us/library/aa140066(office.10).aspx</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$formatErrors"></a>
+	<p></p>
+	<h4>$formatErrors = <span class="value">array()</span></h4>
+	<p>[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a40">40</a>]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="methodExcelWriterXML"></a>
+	<h3>constructor ExcelWriterXML <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a62">62</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../ExcelWriterXML/ExcelWriterXML.html">ExcelWriterXML</a> ExcelWriterXML(
+[string
+$fileName = 'file.xml'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor for the ExcelWriterXML class.<br /><br /><p>A default style is created, a filename is generated (if not supplied) and  the create time of the document is stored.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Instance of the class</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$fileName</b>&nbsp;&nbsp;</td>
+        <td>This is the filename that will be passed to the  browser.  If not present it will default to &quot;file.xml&quot;</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddError"></a>
+	<h3>method addError <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a112">112</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addError(
+
+$function, string
+$message)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds a format error.  When the document is generated if there are any  errors they will be listed on a seperate sheet.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$message</b>&nbsp;&nbsp;</td>
+        <td>Details of the error</td>
+      </tr>
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$function</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddSheet"></a>
+	<h3>method addSheet <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a183">183</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../ExcelWriterXML/ExcelWriterXML_Sheet.html">ExcelWriterXML_Sheet</a> addSheet(
+[string
+$id = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Creates a new sheet within the spreadsheet  At least one sheet is required.<br /><br /><p>Additional sheets cannot have the same name as any other sheet.  If a sheet has the same name as another sheet then it will follow the  default naming convention as if $id was null</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Reference to a new sheet class</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>The name of the sheet.  If left blank then the sheet  will default to &quot;Sheet&quot; + n (e.g. &quot;Sheet1&quot;)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddStyle"></a>
+	<h3>method addStyle <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a151">151</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../ExcelWriterXML/ExcelWriterXML_Style.html">ExcelWriterXML_Style</a> addStyle(
+[string
+$id = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Creates a new style within the spreadsheet.<br /><br /><p>Styles cannot have the same name as any other style. If a style has the  same name as another style then it will follow the default naming  convention as if $id was null</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Reference to a new style class</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>The name of the style.  If left blank then the style  will default to &quot;CustomStyle&quot; + n (e.g. &quot;CustomStyle1&quot;)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcheckStyleID"></a>
+	<h3>method checkStyleID <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a225">225</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean checkStyleID(
+string
+$id)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Checks whether a proposed Style ID has already been used<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>True if the id is unique, false otherwise</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>The style id to be checked</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddocAuthor"></a>
+	<h3>method docAuthor <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a391">391</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void docAuthor(
+[string
+$author = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the Author of the document<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$author</b>&nbsp;&nbsp;</td>
+        <td>Part of the properties of the document.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddocCompany"></a>
+	<h3>method docCompany <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a403">403</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void docCompany(
+[string
+$company = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the Company of the document<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$company</b>&nbsp;&nbsp;</td>
+        <td>Part of the properties of the document.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddocManager"></a>
+	<h3>method docManager <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a397">397</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void docManager(
+[string
+$manager = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the Manager of the document<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$manager</b>&nbsp;&nbsp;</td>
+        <td>Part of the properties of the document.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddocSubject"></a>
+	<h3>method docSubject <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a385">385</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void docSubject(
+[string
+$subject = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the Subject of the document<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$subject</b>&nbsp;&nbsp;</td>
+        <td>Part of the properties of the document.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddocTitle"></a>
+	<h3>method docTitle <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a379">379</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void docTitle(
+[string
+$title = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the Title of the document<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$title</b>&nbsp;&nbsp;</td>
+        <td>Part of the properties of the document.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetDefaultStyle"></a>
+	<h3>method getDefaultStyle <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a138">138</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../ExcelWriterXML/ExcelWriterXML_Style.html">ExcelWriterXML_Style</a> getDefaultStyle(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the default style that was created by the contructor.<br /><br /><p>This is used when modifications to the default style are required.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Reference to a style class</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodmysqlTableDump"></a>
+	<h3>method mysqlTableDump <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a414">414</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void mysqlTableDump(
+string
+$host, string
+$username, string
+$password, string
+$db, mixed
+$table, [mixed
+$alternateName = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Outputs a MYSQL table or list of tables to an Excel doc<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$host</b>&nbsp;&nbsp;</td>
+        <td>MySQL host to connect to</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$username</b>&nbsp;&nbsp;</td>
+        <td>Username to connect with</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$password</b>&nbsp;&nbsp;</td>
+        <td>Password to connect with</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$db</b>&nbsp;&nbsp;</td>
+        <td>Database to use</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$table</b>&nbsp;&nbsp;</td>
+        <td>If string, out specific table.  If array, each table will have it's own sheet</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$alternateName</b>&nbsp;&nbsp;</td>
+        <td>For multiple tables this does nothing.  For table, overrides auto naming of the sheet (table name)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodoverwriteFile"></a>
+	<h3>method overwriteFile <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a82">82</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void overwriteFile(
+[boolean
+$overwrite = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Whether or not to overwrite a file (when writing to disk)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$overwrite</b>&nbsp;&nbsp;</td>
+        <td>True or False</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsendHeaders"></a>
+	<h3>method sendHeaders <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a125">125</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void sendHeaders(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sends the HTML headers to the client.<br /><br /><p>This is only necessary if the XML doc is to be delivered from the server  to the browser.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowErrorSheet"></a>
+	<h3>method showErrorSheet <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a96">96</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void showErrorSheet(
+[boolean
+$show = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Whether or not to show the sheet containing the Formatting Errors<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$show</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodwriteData"></a>
+	<h3>method writeData <span class="smalllinenumber">[line <a href="../__filesource/fsource_ExcelWriterXML__ExcelWriterXML.php.html#a240">240</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void writeData(
+[string
+$target = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Writes the XML data<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$target</b>&nbsp;&nbsp;</td>
+        <td>If left null the function will output to STD OUT  (e. g. browser or console)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Wed, 16 Feb 2011 20:04:35 -0600 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
